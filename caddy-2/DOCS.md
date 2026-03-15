@@ -127,6 +127,8 @@ caddy_fmt: true
 
 **Note**: _These examples are meant for reference. Adjust them to match your setup._
 
+To create a custom binary as a home assistant app, you can use [Caddy2 Builder app](https://github.com/jdeath/homeassistant-addons/tree/main/caddybuilder) by jdeath
+
 ## Configuration Options
 
 ### Option: `non_caddyfile_config.email`

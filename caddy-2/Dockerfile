@@ -12,7 +12,7 @@ RUN \
     /data/caddy \
   \
   && apk add --no-cache \
-    nss-tools=3.123.1-r0
+    nss-tools=3.124-r0
 
 # https://github.com/caddyserver/caddy/releases
 ENV CADDY_VERSION="v2.11.4"

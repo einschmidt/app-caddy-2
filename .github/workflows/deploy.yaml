@@ -20,10 +20,10 @@ permissions:
 
 jobs:
   ci:
-    uses: einschmidt/workflows/.github/workflows/app-ci.yaml@main
+    uses: einschmidt/workflows/.github/workflows/app-ci.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1
 
   deploy:
     needs: ci
-    uses: einschmidt/workflows/.github/workflows/app-deploy.yaml@main
+    uses: einschmidt/workflows/.github/workflows/app-deploy.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1
     secrets:
       DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}

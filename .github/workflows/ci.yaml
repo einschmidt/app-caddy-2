@@ -13,4 +13,4 @@ permissions:
 
 jobs:
   workflows:
-    uses: einschmidt/workflows/.github/workflows/app-ci.yaml@main
+    uses: einschmidt/workflows/.github/workflows/app-ci.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1

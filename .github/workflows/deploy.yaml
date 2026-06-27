@@ -11,19 +11,22 @@ on:
     types:
       - published
 
-permissions:
-  actions: read
-  contents: write
-  packages: write
-  security-events: write
-  pull-requests: read
+permissions: {}
 
 jobs:
   ci:
+    permissions:
+      actions: read
+      contents: read
+      packages: read
+      security-events: write
     uses: einschmidt/workflows/.github/workflows/app-ci.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1
 
   deploy:
     needs: ci
+    permissions:
+      contents: read
+      packages: write
     uses: einschmidt/workflows/.github/workflows/app-deploy.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1
     secrets:
       DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}

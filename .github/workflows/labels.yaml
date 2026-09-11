@@ -12,4 +12,4 @@ permissions:
 
 jobs:
   workflows:
-    uses: einschmidt/workflows/.github/workflows/labels.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1
+    uses: einschmidt/workflows/.github/workflows/labels.yaml@6a57fef88f7f2a778a99121a5f66a2c840c0d47f # v0.1.2

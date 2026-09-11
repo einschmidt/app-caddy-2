@@ -20,13 +20,13 @@ jobs:
       contents: read
       packages: read
       security-events: write
-    uses: einschmidt/workflows/.github/workflows/app-ci.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1
+    uses: einschmidt/workflows/.github/workflows/app-ci.yaml@6a57fef88f7f2a778a99121a5f66a2c840c0d47f # v0.1.2
 
   deploy:
     needs: ci
     permissions:
       contents: read
       packages: write
-    uses: einschmidt/workflows/.github/workflows/app-deploy.yaml@6e89b387b7c75b60847138578ce5140bdac2923a # v0.1.1
+    uses: einschmidt/workflows/.github/workflows/app-deploy.yaml@6a57fef88f7f2a778a99121a5f66a2c840c0d47f # v0.1.2
     secrets:
       DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
